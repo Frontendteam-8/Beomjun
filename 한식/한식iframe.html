@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4:6 Layout with Iframe</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+        }
+        .left {
+            flex: 3;
+            background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+        .right {
+            flex: 7;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .menu-item {
+            display: block;
+            text-align: center;
+            padding: 12px 20px;
+            background: #1a73e8;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.2s;
+        }
+        .menu-item:hover {
+            background: #165abb;
+            transform: translateY(-2px);
+        }
+        .menu-item:active {
+            background: #103f86;
+            transform: translateY(0);
+        }
+        .header {
+            background: #003f5c;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .header .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <header class="header">
+            <h1 class="logo">Korean Menu</h1>
+        </header>
+        <br>
+        <div class="menu-list">
+            <a class="menu-item" href="최가네꽁보리밥 파일/최가체꽁보리밥.html" target="iframe">최가네꽁보리밥</a>
+            <a class="menu-item" href="청진동해장국 파일/청진동해장국.html" target="iframe">청진동해장국</a>
+            <a class="menu-item" href="금수저삼겹/금수저.html" target="iframe">금수저삼겹</a>
+            <a class="menu-item" href="맛있는 고기에 솜씨를 더하다 파일/맛있는 고기에 솜씨를 더하다.html" target="iframe">맛있는 고기에 솜씨를 더하다</a>
+            <a class="menu-item" href="바벤 파일/바벤.html" target="iframe">바벤</a>
+            <a class="menu-item" href="밥한민국 파일/밥한민국.html" target="iframe">밥한민국</a>
+            <a class="menu-item" href="압구정화로구이 파일/압구정화로구이.html" target="iframe">압구정화로구이</a>
+            <a class="menu-item" href="오늘은 김치찌개 파일/오늘은 김치찌개.html" target="iframe">오늘은 김치찌개</a>
+            <a class="menu-item" href="오또상스테키 파일/오또상스테키.html" target="iframe">오또상스테키</a>
+            <a class="menu-item" href="온정가 파일/온정가.html" target="iframe">온정가</a>
+            <a class="menu-item" href="원칼국수 파일/원칼국수.html" target="iframe">원칼국수</a>
+            <a class="menu-item" href="이유있는 갈비찜 파일/이유있는 갈비찜.html" target="iframe">이유있는 갈비찜찜</a>
+            <a class="menu-item" href="청년식당 파일/청년식당.html" target="iframe">청년식당</a>
+        </div>
+    </div>
+    <div class="right">
+        <iframe name="iframe" src="about:blank"></iframe>
+    </div>
+</body>
+</html>

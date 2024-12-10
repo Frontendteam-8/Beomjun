@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛집 홈페이지</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+.header {
+    background: #ff6f61;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+/* 섹션 스타일 */
+.section {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    color: #ff6f61;
+}
+
+/* 메뉴 스타일 */
+#menu ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* 갤러리 스타일 */
+.gallery {
+    display: flex;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* 푸터 스타일 */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">오늘은김치찌개 본점</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#menu">메뉴</a></li>
+                    <li><a href="#gallery">사진</a></li>
+                    <li><a href="#contact">정보</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>소개</h2>
+            <p> #든든한 #1인10000원 #김치찌개 #계란말이 #돼지고기 #잔뜩</p>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>메뉴</h2>
+            <ul>
+                <li>김치찌개 - 9,000원 </li>
+                <li>계란말이 - 6,000원</li>
+                <li>스팸 - 3,500원</li>
+                <li>제육볶음 - 25,000원</li>
+                <li>육전 - 25,000원</li>
+                <li>라면사리 - 1,000원</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>사진</h2>
+            <div class="gallery">
+                <img src="오김1.jpg" alt= "음식 사진">
+                <img src="오김2.jpg" alt="음식 사진">
+                <img src="오김3.jpg" alt="음식 사진">
+                <img src="오김4.jpg" alt="음식 사진">
+                <img src="오김5.jpg" alt="음식 사진">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>정보</h2>
+            <p><strong>주소:</strong> 경북 포항시 북구 장량로 174번길 6-9 1층 (우)37593</p>
+            <p><strong>전화:</strong> 054-251-3334</p>
+            <p><strong>영업시간:</strong> 매일 11:00 - 21:30</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;한메추 For Handong Students.</p>
+        </div>
+    </footer>
+</body>
+</html>

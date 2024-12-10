@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛집 홈페이지</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+.header {
+    background: #ff6f61;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+/* 섹션 스타일 */
+.section {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    color: #ff6f61;
+}
+
+/* 메뉴 스타일 */
+#menu ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* 갤러리 스타일 */
+.gallery {
+    display: flex;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* 푸터 스타일 */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">오또상스테끼</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#menu">메뉴</a></li>
+                    <li><a href="#gallery">사진</a></li>
+                    <li><a href="#contact">정보</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>소개</h2>
+            <p> #가족모임 #데이트코스 #선한영향력가게 #에스키즈존 </p>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>메뉴</h2>
+            <ul>
+                <li>오리지널 함바그 - 11,900원 </li>
+                <li>갈릭 함바그 - 12,900원</li>
+                <li>치즈갈릭 함바그 - 12,900원</li>
+                <li>니코이 함바그 - 12,900원</li>
+                <li>렌치 카츠 - 12,500원</li>
+                <li>우동 사라다 - 11,500원</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>사진</h2>
+            <div class="gallery">
+                <img src="오또상1.jpg" alt= "음식 사진">
+                <img src="오또상2.jpg" alt="음식 사진">
+                <img src="오또상3.jpg" alt="음식 사진">
+                <img src="오또상4.jpg" alt="음식 사진">
+                <img src="오또상5.jpg" alt="음식 사진">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>정보</h2>
+            <p><strong>주소:</strong> 경북 포항시 북구 장량로 212 1층 103호 (우)37596</p>
+            <p><strong>전화:</strong> 054-252-6788</p>
+            <p><strong>영업시간:</strong></p>
+            <p>월 정기휴무 (매주 월요일)</p>
+            <p>화 11:00 - 21:00 / 15:00 - 17:00 (브레이크타임)</p>
+            <p>수 11:00 - 21:00 / 15:00 - 17:00 (브레이크타임)</p>
+            <p>목 11:00 - 21:00 / 15:00 - 17:00 (브레이크타임)</p>
+            <p>금 11:00 - 21:00 / 15:00 - 17:00 (브레이크타임)</p>
+            <p>토 11:00 - 21:00 / 15:00 - 17:00 (브레이크타임)</p>
+            <p>일 11:00 - 21:00 / 15:00 - 17:00 (브레이크타임)</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;한메추 For Handong Students.</p>
+        </div>
+    </footer>
+</body>
+</html>
